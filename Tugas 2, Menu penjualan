@@ -1,0 +1,92 @@
+import java.util.*;
+public class Tugas2{
+ public static void main(String[] args){
+  Scanner input = new Scanner(System.in);
+  
+ 
+ int pilih=0;
+ int beli=0;
+ int harga=0;
+ int hargaT=0;
+
+  do
+  {
+  System.out.println("Pilihan Menu Makanan/Minuman");
+  System.out.println("1. Soto Ayam ");
+  System.out.println("2. Nasi Rawon ");
+  System.out.println("3. Gado-Gado ");
+  System.out.println("4. Es Teh ");
+  System.out.println("5. Es Jeruk ");
+  System.out.print("Masukan Pilihan Menu Anda :");
+  
+   pilih = Integer.parseInt(input.nextLine());
+   switch(pilih){
+   
+   case 1:
+    
+    System.out.print("Masukan porsi yang ada pesan:");
+ int porsi = Integer.parseInt(input.nextLine());
+ harga = porsi*10000;
+ hargaT=hargaT+harga;
+ System.out.println("Anda memilih Soto Ayam " + porsi + "Piring");
+ 
+    System.out.println("Beli Lagi [1=Ya] [0=Tidak] : ");
+  beli=Integer.parseInt(input.nextLine());
+   break;
+   
+   case 2:
+   
+     System.out.print("masukan porsi yang anda pesan:");
+   int Porsi = Integer.parseInt(input.nextLine());
+   harga = Porsi*12000;
+   hargaT=hargaT+harga;
+   System.out.println(" Anda memilih Nasi Rawon " + Porsi + " Piring");
+   
+    System.out.println("Beli Lagi [1=Ya] [0=Tidak] : ");
+  beli=Integer.parseInt(input.nextLine());
+   break;
+   
+   case 3:
+   
+      System.out.print("Masukan porsi yang ada pesan:");
+   int Prsi = Integer.parseInt(input.nextLine());
+   harga   = Prsi*12000;
+   hargaT=hargaT+harga;
+   System.out.println(" Anda memilih Gado-Gado "+ Prsi + " Piring ");
+     
+    System.out.println("Beli Lagi [1=Ya] [0=Tidak] : ");
+  beli=Integer.parseInt(input.nextLine());
+   break;
+   
+   case 4:
+   
+      System.out.print("Masukan porsi yang ada pesan:");  
+   int gelas = Integer.parseInt(input.nextLine());
+   harga = gelas*3000;
+   hargaT=hargaT+harga;
+   System.out.println("Anda memilih Es Teh "+ gelas +" Gelas ");
+   
+    System.out.println("Beli Lagi [1=Ya] [0=Tidak] : ");
+  beli=Integer.parseInt(input.nextLine());
+     
+   break;
+   
+   case 5:
+     
+	 System.out.print("Masukan porsi yang ada pesan:");  
+   int glas = Integer.parseInt(input.nextLine());
+   harga = glas*3000;
+   hargaT=hargaT+harga;
+   System.out.println("Anda memilih Es Jeruk "+ glas +" Gelas ");
+   
+  System.out.println("Beli Lagi [1=Ya] [0=Tidak] : ");
+  beli=Integer.parseInt(input.nextLine());
+     
+   break;
+   
+  }   
+  }
+  while (beli==1);
+      System.out.print("Total transaksi yang harus anda bayar adalah Rp."+ hargaT);
+ }
+}
