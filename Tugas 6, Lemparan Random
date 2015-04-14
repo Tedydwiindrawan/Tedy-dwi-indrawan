@@ -1,6 +1,6 @@
 import java.util.*;
 public class Tugas6 {
-  public static void main (String [] naufal){
+  public static void main (String [] args){
   Scanner masukan=new Scanner (System.in);
 
   int gambar=0;
