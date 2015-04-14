@@ -1,0 +1,25 @@
+import java.util.*;
+public class Tugas1{
+public static void main(String []args)
+{ Scanner sc=new Scanner (System.in); 
+int harga_kaos=50000;
+int jumlah_kaos=0;
+int total_kaos=0;
+int total_harga=0;
+int jumlah_kaos_yang_dibeli=0;
+int jumlah_keseluruhan=0;
+
+System.out.print("Masukan jumlah kaos : ");
+jumlah_kaos=Integer.parseInt(sc.nextLine());
+
+total_kaos=jumlah_kaos / 3;
+jumlah_kaos_yang_dibeli=total_kaos * 2;
+jumlah_keseluruhan=jumlah_kaos - total_kaos;
+total_harga=jumlah_keseluruhan * harga_kaos;
+
+System.out.println("Jumlah Bonus Yang di Peroleh :" +total_kaos);
+System.out.println("jumlah kaos yang harus dibayar :" +total_harga);
+
+
+}
+}
